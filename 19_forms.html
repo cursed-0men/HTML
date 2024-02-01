@@ -1,0 +1,87 @@
+<!-- forms using html -->
+<!-- we use pair of <form></form> tags to create form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <!-- we need certain attributes like "action" : where(location) the form data will be sent -->
+    <!-- form submission will be done by backend language -->
+    <!-- "action" attribute sends data to this "index.php" attribute -->
+
+    <!-- we also have "method" attribute which have get/post requests -->
+    <!-- "post" is used for confidential info like password -->
+    <!-- "get" is used for insensitive data -->
+
+    <!-- if we have a form and we are sending sensitive data, we must use post -->
+    <form action="index.php" method="post">
+
+        <!-- we will generate an input field and adding labe to it -->
+        <label style="font-size: large;" for="username">username : </label>
+        <!-- for moving cursor to the box when clicked on "username : " text-->
+        <!-- we also add a "required" attribute to make it compulsory field. -->
+        <!-- we also add addributes "minlength" and "maxlength" to field -->
+        <!-- we also add a placeholder to guide user to enter a particular format. -->
+        <input style="font-size: larger; border-radius: 6px;" type="text" id="username" minlength="5" maxlength="16" placeholder="example1531" required>
+<br><br>
+
+<!-- creating password field-->
+<label for="password">password : </label>
+        <input type="password"  id="password" minlength="5" placeholder="password" required>
+        <br><br>
+
+
+<!-- creating email field-->
+<label for="email">Email : </label>
+<input type="email" id="email" placeholder="example@email" required><br><br>
+
+<!-- creating contact field-->
+<label for="contact">contact number : </label>
+<input type="tel" id="contact" placeholder="1234567890" pattern="[0-9]{10}" required><br><br>
+
+<!-- creating birthdate field-->
+<label for="birthdate">birthdate : </label>
+<input type="date" id="birthdate"><br><br>
+
+<!-- creating quantity field-->
+<label for="quantity">quantity : </label>
+<input type="number" id="quantity" min="0" max="99" value="1"><br><br>
+<!-- using value attribute to show a default value -->
+
+<!-- using radio buttons -->
+<!-- but we can click all of them....to solve that we need to put them in same group -->
+<!-- for that we'll be using "name" attribute :  -->
+
+<label for="title">Your title : </label><br>
+
+<label for="Mr.">Mr.</label>
+<input type="radio" id="Mr." value="Mr." name="title"><br>
+
+<label for="Ms.">Ms.</label>
+<input type="radio" id="Ms." value="Ms." name="title"><br>
+
+<label for="PhD.">PhD.</label>
+<input type="radio" id="PhD." value="PhD." name="title"> <br><br>
+
+
+<!-- dropdown menu : 1.12.00 -->
+
+
+
+
+<!-- submit button -->
+<input style="font-size: large;" type="submit"><br><br>
+
+<!-- form reset button -->
+        <input style="font-size: large;" type="reset">
+
+
+
+
+    </form>
+    
+</body>
+</html>

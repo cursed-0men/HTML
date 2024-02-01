@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>buttons JS</title>
+</head>
+
+<body>
+    <button onclick="changetext()" style="background-color:yellow; color: black; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; border-radius: 8px; font-size: large;">click me to change text</button>
+    <!-- using java script -->
+    <p id="greetings">hello</p>
+    <!-- we wish to change "welcome" to "hello" on clicking button using javascript -->
+    <!-- for that we create function -->
+
+    <!-- important part!!!!!!!! -->
+    <script>
+        function changetext(){
+            document.getElementById("greetings").innerHTML = "Welcome";
+        }
+    </script>
+</body>
+
+</html>
